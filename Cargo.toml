@@ -2,7 +2,7 @@
 name = "solana-nostd-blake3"
 authors = ["Dean Little <@deanmlittle>"]
 description = "A more efficient implementation of Blake3 for SVM"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 license = "MIT"
 
