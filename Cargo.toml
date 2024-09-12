@@ -1,0 +1,19 @@
+[package]
+name = "solana-nostd-blake3"
+authors = ["Dean Little <@deanmlittle>"]
+description = "A more efficient implementation of Blake3 for SVM"
+version = "0.1.1"
+edition = "2021"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+blake3 = { version = "1.5.4", optional = true }
+
+[dev-dependencies]
+hex = "0.4.3"
+
+[target.'cfg(not(target_os = "solana"))'.dependencies]
+blake3 = { version = "^1.5.0" }
